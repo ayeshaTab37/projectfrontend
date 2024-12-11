@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interview Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Interview<span>Ready</span></h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" id="step-1">
+      <h1>Welcome to InterviewReady!</h1>
+      <p>Showcase your skills and land your dream job.</p>
+      <button id="start-button">Start Interview</button>
+    </div>
+
+    <div class="container" id="step-2" style="display: none;">
+      <h1>User Information</h1>
+      <form id="basic-info-form">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        <button type="submit">Next</button>
+      </form>
+    </div>
+
+    <div class="container" id="step-3" style="display: none;">
+      <h1>Educational Qualifications</h1>
+      <form id="education-form">
+        <label for="qualification">Highest Qualification:</label>
+        <input type="text" id="qualification" name="qualification" placeholder="Enter your highest qualification" required>
+        <label for="institution">Institution Name:</label>
+        <input type="text" id="institution" name="institution" placeholder="Enter your institution name" required>
+        <label for="passing-year">Year of Passing:</label>
+        <input type="number" id="passing-year" name="passing_year" placeholder="Enter the year of passing" min="1900" max="2099" required>
+        <button type="submit">Next</button>
+      </form>
+    </div>
+
+    <div class="container" id="step-4" style="display: none;">
+      <h1>Hiring Information</h1>
+      <form id="hiring-info-form">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <label for="linkedin">LinkedIn Profile:</label>
+        <input type="url" id="linkedin" name="linkedin" placeholder="Enter your LinkedIn profile URL">
+        <label for="experience">Years of Experience:</label>
+        <input type="number" id="experience" name="experience" placeholder="Enter your experience in years" min="0" required>
+        <label for="preferred-role">Preferred Role:</label>
+        <select id="preferred-role" name="preferred_role" required>
+          <option value="">Select a role</option>
+          <option value="Software Developer">Software Developer</option>
+          <option value="Data Scientist">Data Scientist</option>
+          <option value="UI/UX Designer">UI/UX Designer</option>
+          <option value="Project Manager">Project Manager</option>
+          <option value="Other">Other</option>
+        </select>
+        <button type="submit">Next</button>
+      </form>
+    </div>
+
+    <div class="container" id="step-5" style="display: none;">
+      <h1>Technology MCQ Test</h1>
+      <form id="mcq-form">
+        <div>
+          <label>1. What does HTML stand for?</label>
+          <select name="question1" required>
+            <option value="">Select an answer</option>
+            <option value="Hyper Text Markup Language">Hyper Text Markup Language</option>
+            <option value="High Text Machine Language">High Text Machine Language</option>
+            <option value="Hyperlink Text Markup Language">Hyperlink Text Markup Language</option>
+          </select>
+        </div>
+        <div>
+          <label>2. Which programming language is known as the backbone of the web?</label>
+          <select name="question2" required>
+            <option value="">Select an answer</option>
+            <option value="Python">Python</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="C++">C++</option>
+          </select>
+        </div>
+        <div>
+          <label>3. What purpose CSS used for?</label>
+          <select name="question3" required>
+            <option value="">Select an answer</option>
+            <option value="Styling web pages">Styling web pages</option>
+            <option value="Scripting web pages">Scripting web pages</option>
+            <option value="Storing data">Storing data</option>
+          </select>
+        </div>
+        <div>
+          <label>4. What purpose JavaScript used for?</label>
+          <select name="question4" required>
+            <option value="">Select an answer</option>
+            <option value="Creating interactive web pages">Creating interactive web pages</option>
+            <option value="Designing web pages">Designing web pages</option>
+            <option value="Storing data">Storing data</option>
+          </select>
+        </div>
+        <div>
+          <label>5. What is a database?</label>
+          <select name="question5" required>
+            <option value="">Select an answer</option>
+            <option value="A collection of organized information">A collection of organized information</option>
+            <option value="A programming language">A programming language</option>
+            <option value="A type of hardware">A type of hardware</option>
+          </select>
+        </div>
+        <div>
+          <label>6. What is the purpose of a web server?</label>
+          <select name="question6" required>
+            <option value="">Select an answer</option>
+            <option value="To store and deliver web pages">To store and deliver web pages</option>
+            <option value="To write code">To write code</option>
+            <option value="To design websites">To design websites</option>
+          </select>
+        </div>
+        <div>
+          <label>7. What is the difference between HTTP and HTTPS?</label>
+          <select name="question7" required>
+            <option value="">Select an answer</option>
+            <option value="HTTPS is a secure version of HTTP">HTTPS is a secure version of HTTP</option>
+            <option value="HTTP is a secure version of HTTPS">HTTP is a secure version of HTTPS</option>
+            <option value="There is no difference">There is no difference</option>
+          </select>
+        </div>
+        <div>
+          <label>8. What is a version control system?</label>
+          <select name="question8" required>
+            <option value="">Select an answer</option>
+            <option value="A software tool for managing changes to source code">A software tool for managing changes to source code</option>
+            <option value="A type of database">A type of database</option>
+            <option value="A programming language">A programming language</option>
+          </select>
+        </div>
+        <div>
+          <label>9. What is the primary function of a firewall in network security?</label>
+          <select name="question9" required>
+            <option value="">Select an answer</option>
+            <option value="A">To encrypt network traffic</option>
+            <option value="B">To detect and prevent unauthorized access</option>
+            <option value="C">To speed up network transmission</option>
+            <option value="D">To filter spam emails</option>
+          </select>
+        </div>
+        
+        <div>
+          <label>10. Which of the following is NOT a fundamental principle of object-oriented programming?</label>
+          <select name="question10" required>
+            <option value="">Select an answer</option>
+            <option value="A">Inheritance</option>
+            <option value="B">Polymorphism</option>
+            <option value="C">Encapsulation</option>
+            <option value="D">Iteration</option>
+          </select>
+        </div>
+  
+        <button type="submit">Submit Test</button>
+      </form>
+    </div>
+
+    <div class="container result" id="result" style="display: none;">
+      <h1>Your Results</h1>
+      <p>You have completed the interview process.</p>
+      <p>Your score: <span id="score"></span></p>
+      <p>Your next interview is scheduled for: <span id="next-interview"></span></p>
+      <button id="back-to-start">Back to Start</button>
+    </div>
+  </main>
+
+  <script src="scriptx.js"></script>
+</body>
+</html>
